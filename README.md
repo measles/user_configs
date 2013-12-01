@@ -22,9 +22,9 @@ $ make install
 
 ##  i3 install
 ```console
-$ make -C user_config i3_<location>
+$ make -C user_config i3_location>
 ```
-Where <location> is **home** or **work**
+Where \<location\> is **home** or **work**
 
 ## About
 
