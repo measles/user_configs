@@ -4,13 +4,13 @@ This repo contains most config I use
 
 Contents:
  - vim
- - i3 (http://i3wm.org/)
+ - [i3](http://i3wm.org/)
 
 ## Install
 
 ```console
 $ git clone git@github.com:measles/user_configs.git
-$ make -C dotfiles install
+$ make -C user_configs install
 ```
 
 ## Update
@@ -19,6 +19,12 @@ $ make -C dotfiles install
 $ git pull
 $ make install
 ```
+
+##  i3 install
+```console
+$ make -C user_config i3_<location>
+```
+Where <location> is **home** or **work**
 
 ## About
 
