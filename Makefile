@@ -30,13 +30,13 @@ vim-vundle:
 
 i3_home:
 	+make i3_clean
-	@ln -sf $(CURDIR)/i3/home/i3 $(HOME)/.
+	@ln -sf $(CURDIR)/i3/home/.i3 $(HOME)/.
 	#perhaps, ther has to be used 'restart' commad.
 	i3 reload
 
 i3_work:
 	+make i3_clean
-	@ln -sf $(CURDIR)/i3/work/i3 $(HOME)/.
+	@ln -sf $(CURDIR)/i3/work/.i3 $(HOME)/.
 	#perhaps, ther has to be used 'restart' commad.
 	i3 reload
 
