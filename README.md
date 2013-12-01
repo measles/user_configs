@@ -8,7 +8,7 @@ Contents:
 ## Install
 
 ```console
-$ git clone git://github.com/ming13/dotfiles.git
+$ git clone git@github.com:measles/user_configs.git
 $ make -C dotfiles install
 ```
 
