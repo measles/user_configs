@@ -22,11 +22,11 @@ $ make install
 
 ##  i3 install
 ```console
-$ make -C user_config i3_<location>
+$ make -C user_config i3_\<location>
 ```
 Where \<location\> is **home** or **work**
 
 ## About
 
-Based on the idea and Makefile from https://github.com/crible/dotfiles . Thanks a lot for a @crible for advices.
+Based on the idea and Makefile from https://github.com/crible/dotfiles . Thanks a lot @crible for advices.
 
