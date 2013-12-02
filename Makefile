@@ -1,3 +1,6 @@
+#
+# Main, general rules
+#
 all:
 	+make help
 
@@ -10,18 +13,28 @@ help:
 
 install:
 	+make clean
-	@ln -sf $(CURDIR)/vim/.vimrc $(HOME)/.
-	@ln -sf $(CURDIR)/vim/.gvimrc $(HOME)/.
-	@ln -sf $(CURDIR)/vim/.vim $(HOME)/.
+	+make vim-install
 	+make post-install
 
 clean:
+	+make vim-clean
+
+post-install:
+	+make vim-vundle
+
+#
+# Pakage-specific parts
+#
+
+vim-clean:
 	@rm -rf $(HOME)/.vimrc
 	@rm -rf $(HOME)/.gvimrc
 	@rm -rf $(HOME)/.vim
 
-post-install:
-	+make vim-vundle
+vim-install:
+	@ln -sf $(CURDIR)/vim/.vimrc $(HOME)/.
+	@ln -sf $(CURDIR)/vim/.gvimrc $(HOME)/.
+	@ln -sf $(CURDIR)/vim/.vim $(HOME)/.
 
 vim-vundle:
 	@rm -rf $(CURDIR)/vim/.vim/bundle/vundle
