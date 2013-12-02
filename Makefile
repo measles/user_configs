@@ -16,11 +16,13 @@ install:
 	+make clean
 	+make vim-install
 	+make mplayer-install
+	+make git-install
 	+make post-install
 
 clean:
 	+make vim-clean
 	+make mplayer-clean
+	+make git-clean
 
 post-install:
 	+make vim-vundle
@@ -48,20 +50,28 @@ vim-vundle:
 i3_home:
 	+make i3-clean
 	@ln -sf $(CURDIR)/i3/home/.i3 $(HOME)/.
-	#perhaps, ther has to be used 'restart' commad.
+	#perhaps, there has to be used 'restart' commad.
 	i3 reload
 
 i3_work:
 	+make i3-clean
 	@ln -sf $(CURDIR)/i3/work/.i3 $(HOME)/.
-	#perhaps, ther has to be used 'restart' commad.
+	#perhaps, there has to be used 'restart' commad.
 	i3 reload
 
 i3-clean:
-	@rm -rf ./$(HOME)/.i3
+	@rm -rf $(HOME)/.i3
 
 mplayer-clean:
 	@rm -rf $(HOME)/.mplayer
 
 mplayer-install:
 	@ln -sf $(CURDIR)/mplayer/.mplayer $(HOME)/.
+
+git-clean:
+	@rm -rf $(HOME)/.gitconfig
+	@rm -rf $(HOME)/.gitignore
+
+git-install:
+	@ln -sf $(CURDIR)/git/.gitconfig $(HOME)/.
+	@ln -sf $(CURDIR)/git/.gitignore $(HOME)/.
