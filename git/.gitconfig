@@ -6,3 +6,8 @@
 	excludesfile = ~/.gitignore
 [merge]
 	tool = vimdiff
+[alias]
+	co = commit
+	ch = checkout
+	ps = push
+	pl = pull
