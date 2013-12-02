@@ -6,6 +6,7 @@ Contents:
  - vim
  - [i3](http://i3wm.org/)
  - mplayer
+ - git
 
 ## Install
 
