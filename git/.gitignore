@@ -1,0 +1,9 @@
+# Vim temporary and swap files
+~*
+.*.swp
+
+# Ruby gem-files
+*.gem
+
+# Debian pakages
+*.deb

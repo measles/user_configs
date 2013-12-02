@@ -1,0 +1,8 @@
+[user]
+	name = Andrej Zakharevich
+	email = andrej@zahar.ws
+[core]
+	editor = vim
+	excludesfile = /home/billi/.gitignore
+[merge]
+	tool = vimdiff
