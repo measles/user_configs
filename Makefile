@@ -1,6 +1,7 @@
 #
 # Main, general rules
 #
+
 all:
 	+make help
 
@@ -22,6 +23,7 @@ clean:
 post-install:
 	+make vim-vundle
 
+
 #
 # Pakage-specific parts
 #
@@ -42,16 +44,16 @@ vim-vundle:
 	@vim +BundleInstall! +quitall
 
 i3_home:
-	+make i3_clean
+	+make i3-clean
 	@ln -sf $(CURDIR)/i3/home/.i3 $(HOME)/.
 	#perhaps, ther has to be used 'restart' commad.
 	i3 reload
 
 i3_work:
-	+make i3_clean
+	+make i3-clean
 	@ln -sf $(CURDIR)/i3/work/.i3 $(HOME)/.
 	#perhaps, ther has to be used 'restart' commad.
 	i3 reload
 
-i3_clean:
+i3-clean:
 	@rm -rf ./$(HOME)/.i3
