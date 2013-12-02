@@ -3,6 +3,6 @@
 	email = andrej@zahar.ws
 [core]
 	editor = vim
-	excludesfile = /home/billi/.gitignore
+	excludesfile = ~/.gitignore
 [merge]
 	tool = vimdiff
