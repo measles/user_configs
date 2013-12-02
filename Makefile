@@ -15,17 +15,19 @@ help:
 install:
 	+make clean
 	+make vim-install
+	+make mplayer-install
 	+make post-install
 
 clean:
 	+make vim-clean
+	+make mplayer-clean
 
 post-install:
 	+make vim-vundle
 
 
 #
-# Pakage-specific parts
+# Pakage-specific rules
 #
 
 vim-clean:
@@ -57,3 +59,9 @@ i3_work:
 
 i3-clean:
 	@rm -rf ./$(HOME)/.i3
+
+mplayer-clean:
+	@rm -rf $(HOME)/.mplayer
+
+mplayer-install:
+	@ln -sf $(CURDIR)/mplayer/.mplayer $(HOME)/.
