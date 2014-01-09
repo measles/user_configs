@@ -3,11 +3,15 @@ vo=xv
 #ao=alsa
 ao=pulse
 softvol="yes"
-softvol-max = 450
+softvol-max = 1000
 #stop-xscreensaver = "yes"
 heartbeat-cmd="xscreensaver-command -deactivate >&- 2>&- &"
 msglevel=all=5
 vf=eq2
+cache=100000
+cache-min=99
+channels=2
+hardframedrop="yes"
 
 [gnome-mplayer]
 vo=xv
