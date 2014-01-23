@@ -7,6 +7,7 @@
 [merge]
 	tool = vimdiff
 [alias]
+	st = status
 	co = commit
 	ch = checkout
 	ps = push
