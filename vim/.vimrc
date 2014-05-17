@@ -2,6 +2,9 @@ runtime! config/main.vim
 filetype plugin indent on
 syntax on
 
+" Replace annoing beeps with annoing blinkings
+set noeb vb 
+
 set smartindent
 color murphy
 set showcmd "для паказу каманд, што не пачынаюцца з :
