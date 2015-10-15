@@ -1,5 +1,6 @@
 # Write your default config options here!
-vo=xv
+#vo=xv
+#vo=sdl
 #ao=alsa
 ao=pulse
 softvol="yes"
@@ -7,8 +8,8 @@ softvol-max = 1000
 #stop-xscreensaver = "yes"
 heartbeat-cmd="xscreensaver-command -deactivate >&- 2>&- &"
 msglevel=all=5
-vf=eq2
-cache=100000
+#vf=eq2
+cache=30000
 cache-min=99
 channels=2
 hardframedrop="yes"
