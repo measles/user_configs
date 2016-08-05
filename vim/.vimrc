@@ -5,6 +5,10 @@ syntax on
 " Replace annoing beeps with annoing blinkings
 set noeb vb 
 
+" Адносная нумарацыя і абсалютны нумар для бягучага радка:
+set relativenumber
+set number
+
 set smartindent
 color murphy
 set showcmd "для паказу каманд, што не пачынаюцца з :
