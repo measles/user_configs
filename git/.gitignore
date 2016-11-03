@@ -3,7 +3,8 @@
 .*.swp
 
 # Emacs autosave
-#*#
+\#*\#
+.\#*
 
 # Ruby gem-files
 *.gem
